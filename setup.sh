@@ -16,7 +16,7 @@ brew install git
 curl -LO https://az764295.vo.msecnd.net/stable/d2e414d9e4239a252d1ab117bd7067f125afd80a/VSCode-darwin-stable.zip
 
 # unzip vscode 
-unzip ./VSCode-darwin-stable.zip -d ./Applications
+unzip ./VSCode-darwin-stable.zip -d ~/Applications
 rm -rf ./VSCode-darwin-stable.zip
 code --install-extension golang.go
 
@@ -47,6 +47,3 @@ brew install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp ./.zshrc ~/.zshrc
 curl -L git.io/antigen > ~/zsh/antigen.zsh
-source ~/zsh/antigen.zsh
-antigen oh-my-zsh
-antigen apply
