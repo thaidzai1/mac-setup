@@ -45,3 +45,7 @@ installer -pkg go1.15.3.darwin-amd64.pkg -target /usr/local/go
 brew install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp ./.zshrc ~/.zshrc
+curl -L git.io/antigen > antigen.zsh
+source /zsh/antigen.zsh
+antigen oh-my-zsh
+antigen apply
