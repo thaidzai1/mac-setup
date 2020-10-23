@@ -22,6 +22,7 @@ code --install-extension golang.go
 
 # setup vim editor
 curl 'https://vim-bootstrap.com/generate.vim' --data 'editor=vim&langs=javascript&langs=go' > ~/.vimrc
+cp ./.vimrc ~/.vimrc
 cp ./.vimrc.local.bundles ~/.vimrc.local.bundles
 vim +PlugInstall
 
@@ -46,4 +47,5 @@ rm ~/.oh-my-zsh
 brew install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp ./.zshrc ~/.zshrc
+mkdir ~/zsh
 curl -L git.io/antigen > ~/zsh/antigen.zsh
