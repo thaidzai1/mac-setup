@@ -19,6 +19,9 @@ curl -LO https://az764295.vo.msecnd.net/stable/d2e414d9e4239a252d1ab117bd7067f12
 unzip ./VSCode-darwin-stable.zip -d ~/Applications
 rm -rf ./VSCode-darwin-stable.zip
 code --install-extension golang.go
+code --install-extension lonefy.vscode-JS-CSS-HTML-formatter
+code --install-extension oderwat.indent-rainbow
+code --install-extension zhuangtongfa.material-theme
 
 # setup vim editor
 curl 'https://vim-bootstrap.com/generate.vim' --data 'editor=vim&langs=javascript&langs=go' > ~/.vimrc
