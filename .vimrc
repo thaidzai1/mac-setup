@@ -352,6 +352,9 @@ noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 "" FZF Command
 map <C-f> :FZF<CR>
 
+"" Buffer next 
+map <Leader>e :e#<CR>
+
 "" Floaterm
 let g:floaterm_keymap_prev   = '<F7>'
 let g:floaterm_keymap_new    = '<F8>'
