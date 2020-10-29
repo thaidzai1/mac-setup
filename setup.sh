@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Authorize user homebrew folder
+sudo chown -R $(whoami) /usr/local/var/homebrew
+
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
@@ -47,7 +50,7 @@ installer -pkg go1.15.3.darwin-amd64.pkg -target /usr/local/go
 rm -rf go1.15.3.darwin-amd64.pkg
 
 # install zsh
-rm -rf ~/.oh-my-zsh
+# rm -rf ~/.oh-my-zsh
 brew install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp ./.zshrc ~/.zshrc
