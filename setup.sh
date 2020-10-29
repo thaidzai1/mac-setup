@@ -53,3 +53,6 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 cp ./.zshrc ~/.zshrc
 mkdir ~/zsh
 curl -L git.io/antigen > ~/zsh/antigen.zsh
+
+ssh-keygen -t rsa -b 4096 -C "$1"
+ssh-add ~/.ssh/id_rsa
