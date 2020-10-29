@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Authorize user homebrew folder
+# Authorize user
+sudo chown -R "$USER":admin/usr/local
 sudo chown -R $(whoami) /usr/local/var/homebrew
 
 # install homebrew
