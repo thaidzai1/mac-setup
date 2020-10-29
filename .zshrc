@@ -9,7 +9,7 @@ export ZSH="/Users/thaidzai/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="powerlevel9k/powerlevel9k"
-ZSH_THEME="avit"
+ZSH_THEME="cloud"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -69,17 +69,17 @@ ZSH_THEME="avit"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git 
-  kubectl 
-  gcloud 
-  zsh-syntax-highlighting 
-  zsh-autosuggestions
-  zsh-completions
-  ssh-agent 
-)
+# plugins=(
+#   git 
+#   kubectl 
+#   gcloud 
+#   zsh-syntax-highlighting 
+#   zsh-autosuggestions
+#   zsh-completions
+#   ssh-agent 
+# )
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -129,9 +129,15 @@ antigen bundle command-not-found
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-# Load the theme.
-antigen theme robbyrussell
+# Zsh auto-completions
+antigen bundle zsh-users/zsh-completions
 
+# Command autosuggestions
+antigen bundle zsh-users/zsh-autosuggestions
+
+antigen theme robbyrussell
+antigen theme jreese
+antigen theme cloud
 # Tell Antigen that you're done.
 antigen apply
 
