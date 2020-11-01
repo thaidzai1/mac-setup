@@ -2,7 +2,7 @@
 
 # Authorize user
 sudo chown -R "$USER":admin/usr/local
-sudo chown -R $(whoami) /usr/local/var/homebrew
+# sudo chown -R $(whoami) /usr/local/var/homebrew
 
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -58,5 +58,5 @@ cp ./.zshrc ~/.zshrc
 mkdir ~/zsh
 curl -L git.io/antigen > ~/zsh/antigen.zsh
 
-ssh-keygen -t rsa -b 4096 -C "$1"
-ssh-add ~/.ssh/id_rsa
+# ssh-keygen -t rsa -b 4096 -C "$1"
+# ssh-add ~/.ssh/id_rsa
